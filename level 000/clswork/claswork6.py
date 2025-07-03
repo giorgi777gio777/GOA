@@ -1,0 +1,11 @@
+# 6) მომხმარებელს შემოატანინე ორი რიცხვი. ერთი float ტიპის, მეორე int ტიპის. და დაპრინტეთ ყველა შესაძლო მათემატიკური მოქმედება მათ შორის. (+, -, *, /, //, **, %) 
+
+number4 = int (input('კალკულატორები'))
+number2 =int (input('კალენდარები'))
+print(number2 + number4)
+print(number2 - number4)
+print(number2 * number4)
+print(number4 / number2)
+print(number2 ** number4)
+print(number2 // number4)
+print(number4 % number2)
