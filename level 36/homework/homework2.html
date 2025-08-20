@@ -1,0 +1,51 @@
+<!-- 2)შექმენით ვებსაიტი რომელიც იქნება მანქანების შესახებ,გამოიყენეთ ფოტოებიც და ასევე შექმენით დროპდაუნ მენიუ სადაც ჩამოთვლილი იქნება საიტზე მოცემული ავტომობილების სახელები -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #f0f0f0; }
+    nav { background: #333; padding: 10px; }
+    nav a { color: white; text-decoration: none; margin: 0 10px; }
+    .dropdown { position: relative; display: inline-block; }
+    .dropdown-content { display: none; position: absolute; background: #444; min-width: 100px; }
+    .dropdown-content a { color: white; display: block; padding: 5px; text-decoration: none; }
+    .dropdown:hover .dropdown-content { display: block; }
+    .car { margin: 20px; background: white; padding: 10px; display: inline-block; border-radius: 10px; }
+    .car img { width: 200px; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <h1>მანქანების საიტი</h1>
+
+  <nav>
+    <div class="dropdown">
+      ავტომობილები
+      <div class="dropdown-content">
+        <a href="#bmw">BMW</a>
+        <a href="#audi">Audi</a>
+        <a href="#tesla">Tesla</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="car" id="bmw">
+    <h3>BMW</h3>
+    <img src="bmw.png" alt="BMW">
+  </div>
+
+  <div class="car" id="audi">
+    <h3>Audi</h3>
+    <img src="audi.png" alt="Audi">
+  </div>
+
+  <div class="car" id="tesla">
+    <h3>Tesla</h3>
+    <img src="tesla.png" alt="Tesla">
+  </div>
+</body>
+</html>

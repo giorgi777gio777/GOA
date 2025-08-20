@@ -1,0 +1,35 @@
+<!-- 3)შექმენით ტანსაცმლის მაღაზია სადაც მოათავსებთ ტანსაცმლის ფოტოებს ასევე შექმენით დროპდაუნ მენიუ სადაც იქნება ჩამოთვლილი ამ საიტზე მყოფი ტანსაცმლის ფოტოების სახელები,ასევე დაამატეთ submit ღილაკიც რომ შეძ₾ო ამ არჩეული ტანსაცმლის დადასტურება -->
+ <!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h1></h1>
+
+  
+  <label for="clothes">აირჩიეთ ტანსაცმელი:</label>
+  <select id="clothes">
+    <option value="კაბა">კაბა</option>
+    <option value="t shirt">t shirt</option>
+    <option value="миксер">миксер</option>
+  </select>
+
+  
+  <div>
+    <h3>კაბა</h3>
+    <img src="კაბა.png" width="200"><br>
+
+    <h3>t-shirt</h3>
+    <img src="tung sahur.png" width="200"><br>
+
+    <h3>миксер</h3>
+    <img src="m.png" width="200"><br>
+  </div>
+
+  
+  <button onclick="alert('თქვენი არჩევანი: ' + document.getElementById('clothes').value)">შეძენა</button>
+</body>
+</html>

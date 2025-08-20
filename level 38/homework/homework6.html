@@ -1,0 +1,21 @@
+<!-- 6)შექმენით ვებსაიტი სადაც დაამატებთ აუდიოს რომელსაც ექნება კონტროლები,ასევე იქნება დამიუთებული ვებსაიტის გახსნის შემდეგ და ასევე დაიწყება მაშინვე როდესაც ვებსაიტს ჩავრთავთ,ასევე დაიწყოს თავიდან როცა დასრულდება აუდიოს დაკვრა, ასევე მიანიჭეთ სამი ტიპის ფორმატი ანუ ტიპი ამ აუდიოებს რომ თუ ბრაუზერმა არ დაუჭირა მხარი ამ ფორმატს სხვა ფორმატში გაიხსნას,ასევე დაუწერეთ ალტერნატიული ტექსტი რომელმაც უნდა იმუშაოს იმ შემთხვევაში თუ ბრაუზერმა არც ერთი აუდიოს ფორმატს არ დაუჭირა მხარი -->
+ <!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h1>აუდიო ვებსაიტი</h1>
+
+  <audio controls autoplay loop muted>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+    <source src="https://www.w3schools.com/html/horse.wav" type="audio/wav">
+    თქვენი ბრაუზერი არ უჭერს მხარს ამ აუდიო ფორმატებს.
+  </audio>
+
+  <p>აუდიო ავტომატურად დაიწყება, გაიმეორებს და ხელმისაწვდომია სხვადასხვა ფორმატში.</p>
+</body>
+</html>

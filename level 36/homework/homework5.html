@@ -1,0 +1,42 @@
+
+<!-- 5)შექმენით ვებბსაიტი ზოოპარკის შესახებ,,ამ ვებსაიტზე უნდა გქონდეთ ცხოველების ფოტოები,დაასათაურეთ ყველა ფოტო სათაურის თეგით,შემდეგ ქვეშ მოათავსეთ ააღწერა ამ ცხოველის ,ამ ცხოველის აღწერის დროს გამოიყენეთ ტექსტის ფორმატირების თეგები,აღწერის შემდეგ იყოს ღილაკი ,და ამ ღილაკის ქვემოთ იყოს ლინკი რომელიც გადაგიყვანთ ამ კონკრეტული ცხოველის ლინკზე,ასევე გამოიყენეთ დროპდაუნ მენიუ სადაც ჩამოთვლილი გექნებათ ყველაის ცხოველი რომელიც ვებსაიტზე გექნებათ მოთავსებული -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ზოოპარკი</title>
+</head>
+<body>
+  <h1>ზოოპარკი</h1>
+
+
+  <label for="animals">აირჩიეთ ცხოველი:</label>
+  <select id="animals">
+    <option value="ლომი">ლომი</option>
+    <option value="ეფელანტი">ეფელანტი</option>
+    <option value="ჟირაფი">ჟირაფი</option>
+  </select>
+  <button onclick="alert('თქვენ აირჩიეთ: ' + document.getElementById('animals').value)">შეძენა</button>
+
+  <hr>
+
+
+  <h2>ლომი</h2>
+  <img src="ლ.png" width="300"><br>
+  <p><strong>ლომი</strong> არის დიდი კატა, ცნობილი თავისი მამაცი ბუნებით.</p>
+  <a href="https://ka.wikipedia.org/wiki/ლომი" target="_blank">მეტი ინფორმაცია</a>
+
+  <h2>ეფელანტი</h2>
+  <img src="s.png" width="300"><br>
+  <p><strong>ეფელანტი</strong> არის მსხვილი ხმელეთი ცხოველი თავისი გრძელი ცხვირით.</p>
+  <a href="https://ka.wikipedia.org/wiki/ეფელანტი" target="_blank">მეტი ინფორმაცია</a>
+
+  <h2>ჟირაფი</h2>
+  <img src="j.png" width="300"><br>
+  <p><strong>ჟირაფი</strong> არის გრძელი კისრის მქონე ცხოველი, რომელიც ჭამს ხეებს.</p>
+  <a href="" target="_blank">მეტი ინფორმაცია</a>
+</body>
+</html>

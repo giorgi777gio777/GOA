@@ -1,0 +1,46 @@
+<!-- 1)კომენტარის სახით ახსენით თუ რაში ვიყენებთ nav თეგს,შექმენი ნავიგაცია nav თეგის გამოყენებით შიგნით ლინკებით და ამ ლინკებზე დაჭერის შედეგად უნდა გადადიოდეთ სხვადასხვა ვებსაიტებზე -->
+
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<style>
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; }
+header { background: #111; color: white; }
+
+nav { max-width: 960px; margin: 0 auto; padding: 12px 16px; }
+nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; }
+nav a { display: inline-block; padding: 10px 14px; text-decoration: none; border-radius: 999px; border: 1px solid #2a2a2a; color: #eaeaea; }
+nav a:hover { background: #1e1e1e; }
+
+
+main { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+.hint { color: #444; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<header>
+<!-- კომენტარი: nav თეგი გამოიყენება საიტის ნავიგაციის ბლოკებისთვის 
+ის ეხმარება როგორც მომხმარებელს, ასევე საძიებო სისტემებსა და screen reader-ებს
+გააცნობიერონ სად არის მთავარ გვერდებზე გადასასვლელი ბმულები ეს  ნაწერი ცოტათი ჩატ ჯიპიტით იყო გაკეთებული რადგან კარგათ მინდოდა ახსნა nav ფუნქცისს . -->
+<nav aria-label="ძირითადი ნავიგაცია">
+<ul>
+<li><a href="https://www.google.com" target="_blank" rel="noopener">Google</a></li>
+<li><a href="https://ka.wikipedia.org" target="_blank" rel="noopener">Wikipedia (KA)</a></li>
+<li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Docs</a></li>
+<li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+<li><a href="https://stackoverflow.com" target="_blank" rel="noopener">Stack Overflow</a></li>
+</ul>
+</nav>
+</header>
+
+
+<main>
+<h1>ნავიგაციის მაგალითი</h1>
+<p class="hint">ზემოთ მოცემულ მენიუში თითო ბმულზე დაჭერისას გახსნება შესაბამისი ვებსაიტი ახალ ჩანართში (target="_blank").</p>
+<p class="hint">შეგიძლიათ დაამატოთ, წაშალოთ ან შეცვალოთ ბმულები თქვენი სურვილისამებრ.</p>
+</main>
+</body>
+</html>

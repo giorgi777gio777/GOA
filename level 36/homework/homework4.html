@@ -1,0 +1,25 @@
+<!-- 4)შექმენით დროპდაუნ მენიუ,დააკავშირეთ  მენიუ და label ერთმანეთს,დაამატეთ ასევე submit ღლაკი,ამ მენიუში უნდა გქონდეთ ადამიანის გვარების ჩამონათვალიz --><!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <h1>გთხოვთ აირჩიოთ გვარი</h1>
+
+  <form onsubmit="alert('თქვენი არჩეული გვარია: ' + document.getElementById('surname').value); return false;">
+    <label for="surname">გვარი:</label>
+    <select id="surname">
+      <option value="ხელაძე">ხელაძე</option>
+      <option value="მახარაძე">მახარაძე</option>
+      <option value="კოპალეიშვილი">კოპალეიშვილი</option>
+      <option value="გიორგაძე">გიორგაძე</option>
+      <option value="მელიქიშვილი">მელიქიშვილი</option>
+    </select>
+
+    <br><br>
+    <button type="submit">გადაწყვეტა</button>
+  </form>
+</body>
+</html>
